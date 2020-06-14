@@ -1,0 +1,140 @@
+body {
+  text-align: center;
+  background-color: #011F3F;
+  color: #FEF2BF;
+  font-family: 'Press Start 2P', cursive;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  overflow: hidden;
+}
+
+#level-title {
+  font-size: 2.5rem;
+  margin:  5%;
+  line-height: 3.5rem;
+}
+
+.container {
+  display: block;
+  width: 50%;
+  margin: auto;
+}
+
+.btn {
+  margin: 25px;
+  display: inline-block;
+  height: 180px;
+  width: 180px;
+  border: 10px solid black;
+  border-radius: 20%;
+  position: relative;
+  cursor: pointer;
+  font-size: 3rem;
+  color: white;
+  font-weight: bold;
+   line-height: 13rem; /* vertical align text */
+  outline: none;
+}
+#entr-btn{
+  display: inline-block;
+  border: 1px solid;
+  padding: 1rem;
+  border-radius: 1rem;
+  outline: none;
+  cursor: pointer;
+}
+
+.yellow{
+  color:black;
+}
+
+.game-over {
+  background-color: red;
+  opacity: 0.8;
+}
+
+.red {
+  background-color: red;
+}
+
+.green {
+  background-color: green;
+}
+
+.blue {
+  background-color: blue;
+}
+
+.yellow {
+  background-color: yellow;
+}
+
+.pressed {
+  box-shadow: 0 0 20px white;
+  background-color: grey;
+}
+.success{
+  background-color: greenyellow;
+}
+
+
+@media(max-width: 1200px){
+  .container{
+    width: 100%;
+  }
+  #level-title{
+    line-height: 3rem;
+  }
+  .body, .btn, #level-title{
+    font-size: 2rem;
+  }
+
+  .btn{
+    width: 150px;
+    height: 150px;
+    line-height: 5rem;
+    margin: 18px;
+  }
+}
+
+@media(max-width: 950px){
+
+  .body, .btn, #level-title{
+    font-size: 1.5rem;
+  }
+
+  .btn{
+    width: 100px;
+    height: 100px;
+    margin: 18px;
+    border: .3rem solid black;
+  }
+}
+
+@media(max-width: 680px){
+  .btn{
+    width: 80px;
+    height: 80px;
+    margin: 13px;
+  }
+}
+
+@media(max-width: 500px){
+  .btn{
+    width: 70px;
+    height: 70px;
+    margin: 13px;
+  }
+}
+
+@media(max-width: 264px){
+
+  .btn{
+    width: 65px;
+    height: 65px;
+    margin: 13px;
+  }
+}
